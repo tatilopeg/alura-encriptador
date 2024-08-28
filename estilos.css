@@ -1,0 +1,218 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+/* Variables */
+:root {
+    --naranjaOscuro: #FF4500;
+    --naranjaMedio: #311b1b;
+    --naranjaClaro: #100f0f;
+    --texto: #100f0f;
+    --fondo: #cfaea1;
+    --fondoDos: #FFA07A;;
+}
+
+/* Textos */
+h1 {
+    color: var(--titulo);
+    font-size: 4rem;
+    text-shadow: 5px 0 5px var(--naranjaMedio);
+    transition: opacity 1s ease-out;
+}
+
+h2 {
+    color: var(--titulo);
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--texto);
+    font-size: 1rem;
+}
+
+strong {
+    color: #ff0000;
+}
+
+/* Contenedor */
+
+body {
+    background: var(--fondo);
+    font-family: 'Cascadia Code', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    text-align: center;
+    height: 25%;
+    margin: 1%;
+    align-items: center;
+}
+
+#aluraLogo {
+    width: 128px;
+    margin-right: 2vw;
+    padding: 15px;
+    border-radius: 10%;
+    border-bottom: solid 1px var(--naranjaMedio);
+    border-left: solid 1px var(--naranjaClaro);
+}
+
+/* Cuerpo */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1%;
+    height: 66%;
+}
+
+#textoIngresado {
+    font-family: 'Cascadia Code', sans-serif;
+    width: 50%;
+    height: 90%;
+    padding: 10px;
+    text-align: center;
+    background: var(--fondo);
+    color: var(--texto);
+    font-size: 2rem;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    transition: box-shadow 0.3s ease-out;
+}
+
+#textoIngresado:focus {
+    box-shadow: 2px 2px 5px 1px var(--naranjaClaro);
+    outline: none;
+}
+
+#textoIngresado::-webkit-scrollbar {
+    height: 0;
+    width: 10px;
+}
+
+#textoIngresado::-webkit-scrollbar-thumb {
+    background: var(--naranjaClaro);
+    border-radius: 10px;
+}
+
+/* Botones */
+#contenedorBotones {
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+#contenedorBotones * {
+    padding: 15px 75px;
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 1rem;
+    border-radius: 24px;
+    transition: transform 0.5s ease-out;
+}
+
+#contenedorBotones *:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+#boton1 {
+    background: var(--naranjaOscuro);
+    color: var(--titulo);
+    border-bottom: 1px solid var(--naranjaMedio);
+    border-right: 1px solid var(--naranjaMedio);
+    border-left: 1px solid var(--naranjaClaro);
+    border-top: 1px solid var(--naranjaClaro);
+}
+
+#boton2 {
+    background: var(--fondo);
+    color: var(--naranjaClaro);
+    border-bottom: 1px solid var(--texto);
+    border-right: 1px solid var(--texto);
+    border-left: 1px solid var(--titulo);
+    border-top: 1px solid var(--titulo);
+}
+
+/* Resultado */
+#contenedorResultado {
+    background: var(--fondoDos);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 32px;
+    height: 100%;
+    width: 25%;
+}
+
+#contenedorResultado p {
+    width: 100%;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+#contenedorResultado p::-webkit-scrollbar {
+    height: 0;
+    width: 10px;
+}
+
+#contenedorResultado p::-webkit-scrollbar-thumb {
+    background: var(--naranjaClaro);
+    border-radius: 10px;
+}
+
+#boton3 {
+    padding: 15px 75px;
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 1rem;
+    border-radius: 24px;
+    transition: transform 0.5s ease-out;
+    background: var(--fondoDos);
+    color: var(--naranjaClaro);
+    border-bottom: 1px solid var(--texto);
+    border-right: 1px solid var(--texto);
+    border-left: 1px solid var(--titulo);
+    border-top: 1px solid var(--titulo);
+    margin-bottom: 15px;
+}
+
+#boton3:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+/* Pie de página */
+footer {
+    height: 5%;
+    margin: 1%;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+footer div {
+    font-size: 1rem;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--naranjaMedio);
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+}
+
+footer a:hover {
+    color: var(--naranjaClaro);
+}

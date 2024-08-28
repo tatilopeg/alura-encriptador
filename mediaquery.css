@@ -1,0 +1,133 @@
+/* Tablet */
+
+@media (max-width:1194px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    #textoIngresado {
+        height: 100%;
+        width: 90%;
+    }
+
+    #contenedorBotones {
+        margin: 0;
+        flex-direction: row;
+        gap: 10vw;
+    }
+
+    #contenedorBotones * {
+        font-size: 1.25rem;
+        padding: 15px 45px;
+    }
+
+    #contenedorResultado {
+        width: 70%;
+        height: 50%;
+    }
+
+    #contenedorResultado img {
+        display: none;
+    }
+
+    #boton3 {
+        padding: 15px 45px;
+    }
+}
+
+/* Celular Vertical */
+@media (max-width:430px) {
+    body {
+        height: auto;
+    }
+
+    header {
+        flex-direction: column;
+        margin-top: 3vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        height: 15vh;
+    }
+
+    #aluraLogo {
+        width: 96px;
+        margin-right: 0;
+        border-bottom: solid 1px var(--naranjaMedio);
+        border-left: solid 1px var(--naranjaClaro);
+    }
+
+    #textoIngresado {
+        width: 85%;
+        color: var(--texto);
+        background: var(--fondo);
+        border: none;
+        border-radius: 10px;
+    }
+
+    #contenedorBotones {
+        flex-direction: column;
+        gap: 3vh;
+        margin: 3vh 0;
+    }
+
+    footer {
+        margin: 3vh 0;
+    }
+}
+
+@media (max-width:320px) {
+    h1 {
+        height: 25vh;
+    }
+
+    #aluraLogo {
+        width: 88px;
+        border-bottom: solid 1px var(--naranjaMedio);
+        border-left: solid 1px var(--naranjaClaro);
+    }
+}
+
+/* Celular Horizontal */
+
+@media (max-height:430px) {
+    body {
+        height: auto;
+    }
+
+    #aluraLogo {
+        width: 96px;
+        border-bottom: solid 1px var(--naranjaMedio);
+        border-left: solid 1px var(--naranjaClaro);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #contenedorBotones {
+        margin: 7vh 0;
+    }
+}
+
+@media (max-height:320px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    #aluraLogo {
+        width: 88px;
+        border-bottom: solid 1px var(--naranjaMedio);
+        border-left: solid 1px var(--naranjaClaro);
+    }
+}
