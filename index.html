@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/css/estilos.css" rel="stylesheet">
+    <link href="src/css/mediaquery.css" rel="stylesheet">
+    <link href="src/img/oracle.png" rel="icon" />
+    <script src="https://kit.fontawesome.com/22f799e056.js" crossorigin="anonymous"></script>
+    <title>Challenge Alura</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.aluracursos.com/" target="_blank"><img src="src/img/alura-logo.png" alt="Logo de Alura"
+                id="aluraLogo"></a>
+        <h1 id="titulo"></h1>
+    </header>
+    <main>
+        <textarea id="textoIngresado" placeholder="Ingresa el texto aquí"></textarea>
+        <div id="contenedorBotones">
+            <button id="boton1" onclick="encriptacion()">Encriptar</button>
+            <button id="boton2" onclick="desencriptacion()">Desencriptar</button>
+        </div>
+        <div id="contenedorResultado">
+            <img src="src/img/muneco.png" width="80%">
+            <h2>No fue encontrado un mensaje</h2>
+            <p>Ingrese el mensaje en el campo correspondiente.</p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/tatilopeg" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <div> tatilopeg</div>
+        </a>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
